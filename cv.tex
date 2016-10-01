@@ -1,0 +1,135 @@
+\documentclass[letterpaper,11pt]{article}
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{tocloft}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+
+
+%-----------------------------------------------------------
+%Edit these values as you see fit
+
+\setlength{\outerbordwidth}{1pt}  % Width of border outside of title bars
+\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white)
+\definecolor{shadecolorB}{gray}{0.93}  % Inner background color of title bars
+
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.5in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.3in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{\vspace{5pt}
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded}
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-5pt}
+}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Viktor Filinkov} & \textbf{\today} \\
+Software Developer & \href{mailto:russianbruteforce@gmail.com}{russianbruteforce@gmail.com} \\
+\href{https://github.com/RussianBruteForce}{GitHub} & \href{https://www.linkedin.com/in/ViktorFilinkov}{LinkedIn}\\
+\end{tabular*}
+\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Summary}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Meticulous and detail-oriented Software Developer with dedication to quality. I know a variety of tools and that made me talented for developing innovative solutions to unusual and difficult problems. In spare time I do cybersecurity, radio and contributions to public projects. Linux user from 2008 and the member of \href{http://omsklug.com}{OmskLUG}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Hilights}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+	\item C++11/14 expert
+	\item Low-level programming
+	\item GUI/Mobile/TUI
+	\item Libraries
+	\item Not language-tied
+	\item Deploy experienced
+	\item Fast learner
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Experience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	I studied programming from 14 years by myself. It was C, then C++, Python, D, Lua. After school graduation I already have had many nice projects like \href{https://www.linux-apps.com/p/1132288/}{Hachmei}, \href{https://www.linux-apps.com/p/1131188}{Qtnp}, etc. My school was a customer for most of them. While studying at university I lift up my level to immense. University's tasks were simple; I published most of sources written for my friends and teachers (\href{https://github.com/RussianBruteForce/univer}{link}). For self-proofing of language independence I implement labs for Computational Math in C, D, Lua, Python and C++ (\href{https://github.com/RussianBruteForce/Computational-Math}{link}) and matrix solver in D (\href{https://russianbruteforce.github.io/rarr/}{link}).
+	
+	My quick list technology stack: Linux, Git, Python, C11, Docker, STL, Qt4 (legacy code support), Qt5, MongoDB, SQL, Android (C++/Java). Also I prefer TDD in many cases of developing process.
+	
+	With OmskLUG I participated in \href{http://omsklug.com/members/chemtech/activity/759}{Yandex.Root} and \href{https://vk.com/geohackathon}{Geohackathon} ("Green Light" project).
+	
+	At Crystalnix I got experience in both low and high-level programming. Boost, MongoDB, POSIX.1.b async IO (network), console tools, GUI frontends, cross-platform, legacy code support, tool adaption, Linux packages, Windows installers, OS X bundles, build pipelines, Docker images --- that's not the whole story of my practice. My favorite tools: ag, emacs, gdb, radare2, cpplint, cppcheck, clang-format.
+	
+	The last project I worked on was \href{http://serverauditor.com/}{Serverauditor} --- a desktop and mobile SSH terminal.
+	In my \href{https://github.com/RussianBruteForce}{GitHub} profile you can find a lot of interesting things on ¨Public Activity¨ and ¨Repositories¨ tabs. Some repos fun-guarantee.
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Reviews}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+It was cool to work with Viktor. He is a very smart guy, he knows a lot about C++ and doesn't stop learning. Once he will start using spaces for indentation he will be the best C++ programmer in the world after me.
+
+\begin{flushright}
+	
+\textbf{Vadim Zakondyrin}
+
+Senior Software Developer at Crystalnix
+\end{flushright}
+
+
+Victor is an intelligent guy. He has own view of the world and he is keen on IT technologies especially C++. In spite of his great knowledge, Victor is at the beginning of his professional way and he should still learn to work in team and find compromises between ideal things and the real life. However, I'm sure that he will be able to manage with this task with time.
+
+\begin{flushright}
+	
+	\textbf{Kirill Yakovenko}
+	
+	Project Manager at Crystalnix
+\end{flushright}
+
+
+You may ask for more recommendations here:
+
+\href{mailto:omsk@crystalnix.com}{omsk@crystalnix.com}
+
++7 (3812) 500-851 
+
+\textbf{Artur Vetershpan}, General manager at Crystalnix Omsk
+
+\end{document}
